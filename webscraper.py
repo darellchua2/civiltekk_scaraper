@@ -41,7 +41,6 @@ def look_for_one_specific_table_and_find_individual_attributes_inside_the_table(
             print("\n")
         print("--------------")
 
-
 ## 1. Set the URl that you want to scrape from, might not work if the website is using some front end framework such as React
 URL = "https://yugipedia.com/wiki/History_Archive_Collection"
 
@@ -51,10 +50,10 @@ source = response.text
 
 ### Prints the response of your request, [200] refers to success
 ## You can visit https://developer.mozilla.org/en-US/docs/Web/HTTP/Status to see the meaning of each response
-# print(response) ## 200 means OK
+print(response) ## 200 means OK
 
 ### print out text file of your response
-# print(source)
+print(source)
 
 ### converts source text into a "soup"
 soup = bs.BeautifulSoup(source, 'html.parser')
